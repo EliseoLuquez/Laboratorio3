@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./js/index.js" defer></script>
+    <script src="./js/table.js" defer></script>
+    <script src="./js/xhr.js" defer></script>
+    <script src="./js/anuncio.js" defer></script>
+    <title>Bienes Raices</title>
+</head>
+<body>
+    <form action="#"  id="frmAlta" class="frm">
+        <fieldset style="width: 500px">
+            <legend>Informacion del Anuncio</legend>
+                <div hidden id="divid">
+                    <th>
+                        <td><label for="txtId">Id:</label></td>
+                        <td><input type="text" name="id" id="txtId" ></td>
+                    </th>
+                </div>
+                <div>
+                    <tr>
+                        <td><label for="txtTitulo">Titulo:</label></td>
+                        <td><input type="text" id="txtTitulo" name="titulo" required></td>
+                    </tr>
+                </div>
+                <div>
+                    <tr>
+                        <td><label for="Transaccion">Transaccion:</label></td>
+                        <td><input type="radio" id="alquiler" name="Transaccion" value="1">Alquiler</td>
+                        <td><input type="radio" id="venta" name="Transaccion" value="1">Venta</td>
+                    </tr>
+                </div>
+                <div>
+                    </tr>
+                        <td><label for="txtDescripcion">Descripcion:</label></td>
+                        <td><input type="text" id="txtDescripcion" name="descripcion" required></td>
+                    <tr>
+                </div>
+                <div>
+                        <td><label for="txtPrecio">Precio:</label></td>
+                        <td><input type="number" id="txtPrecio" name="precio" min="0" required></td>
+                    </tr>
+                </div>
+                <div>
+                    <tr>
+                        <td><label for="txtBaños">Cantidad de Baños:</label></td>
+                        <td><input type="number" id="txtBanios" name="banios" min="0" value="Banios"></td>
+                    </tr>
+                </div>
+                <div>
+                    <tr>
+                        <td><label for="txtAutos">Cantidad de Autos:</label></td>
+                        <td><input type="number" id="txtAutos" name="autos" min="0" value="Autos"></td>
+                    </tr>
+                </div>
+                <div>
+                    <tr>
+                        <td><label for="txtDormitorios">Cantidad de Dormitorios:</label></td>
+                        <td><input type="number" id="txtDormitorios" name="dormitorios" min="0" value="Dormitorios"></td>
+                    </tr>
+                </div>
+            </fieldset>
+                    <div>
+                        <input type="button" name="Alta" id="btnAlta" value="Alta">
+                        <input type="button" name="Baja" id="btnBaja" value="Baja">
+                        <input type="button" name="Modificar" id="btnModificar" value="Modificar">
+                        <input type="button" name="Cancelar" id="btnCancelar" value="Cancelar">
+                    </div>
+    </form>
+    <div id="divTabla">
+
+    </div>
+
+</body>
+</html>
