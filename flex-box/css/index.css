@@ -1,0 +1,48 @@
+/*F12 RESOURCE STYLES para ver los estilos de la pagina*/
+*
+{
+    box-sizing: border-box;
+}
+
+
+body
+{
+    display: flex;
+    height: 600px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+div
+{
+    background-color: yellow;
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+}
+/*
+#div1
+{
+    order: 2;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 80%;
+}
+
+#div2
+{
+    order: 0;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 20%;
+}
+
+#div3
+{
+    order: 1;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 20%;
+}*/
