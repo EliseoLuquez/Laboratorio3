@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./js/index.js" defer></script>
+    <script src="./js/table.js" defer></script>
+    <script src="./js/xhr.js" defer></script>
+    <script src="./js/anuncio.js" defer></script>
+    <link rel="stylesheet" href="./css/estilos.css">
+    <title>Bienes Raices</title>
+</head>
+<body>
+    <form action="#"  id="frmAlta" class="frm">
+        <fieldset style="width: 500px">
+            <legend>Informacion del Anuncio</legend>
+                <div hidden id="divId">
+                    <th>
+                        <td><label for="txtId">Id:</label></td>
+                        <td><input type="text" name="id" id="txtId" ></td>
+                    </th>
+                </div>
+                <div id="frmDiv">
+                    <tr id="frmTr">
+                        <td id="frmTd"><label for="txtTitulo">Titulo:</label></td>
+                        <td id="frmTd"><input type="text" id="txtTitulo" name="titulo" required></td>
+                    </tr>
+                </div>
+                <div id="frmDiv">
+                    <tr id="frmTr">
+                        <td id="frmTd"><label for="transaccion">Transaccion:</label></td>
+                        <td id="frmTd"><input type="radio" id="alquiler" name="transaccion">Alquiler</td>
+                        <td id="frmTd"><input type="radio" id="venta" name="transaccion" >Venta</td>
+                    </tr>
+                </div>
+                <div id="frmDiv">   
+                    </tr>
+                        <td id="frmTd"><label for="txtDescripcion">Descripcion:</label></td>
+                        <td id="frmTd"><textarea id="txtDescripcion" name="descripcion" required></textarea></td>
+                    <trr id="frmTr">
+                </div>
+                <div id="frmDiv">
+                        <td id="frmTd"><label for="txtPrecio">Precio:</label></td>
+                        <td id="frmTd"><input type="text" id="txtPrecio" name="precio" min="0" required></td>
+                    </tr>
+                </div>
+                <div id="frmDiv">
+                    <trr id="frmTr">
+                        <td id="frmTd"><label for="txtBaños">Cantidad de Baños:</label></td>
+                        <td id="frmTd"><input type="text" id="txtBaños" name="baños" min="0" value="Baños"></td>
+                    </tr>
+                </div>
+                <div id="frmDiv">
+                    <trr id="frmTr">
+                        <td id="frmTd"><label for="txtAutos">Cantidad de Autos:</label></td>
+                        <td id="frmTd"><input type="text" id="txtAutos" name="autos" min="0" value="Autos"></td>
+                    </tr>
+                </div>
+                <div id="frmDiv">
+                    <trr id="frmTr">
+                        <td id="frmTd"><label for="txtDormitorios">Cantidad de Dormitorios:</label></td>
+                        <td id="frmTd"><input type="text" id="txtDormitorios" name="dormitorios" min="0" value="Dormitorios"></td>
+                    </tr>
+                </div>
+            </fieldset>
+                    <div id="divBotones">
+                        <input type="button" name="Alta" id="btnAlta" value="Guardar">
+                        <input type="button" name="Baja" id="btnBaja" value="Eliminar">
+                        <input type="button" name="Modificar" id="btnModificar" value="Modificar">
+                        <input type="button" name="Cancelar" id="btnCancelar" value="Cancelar">
+                    </div>
+    </form>
+    <div id="divTabla">
+
+    </div>
+
+</body>
+</html>
